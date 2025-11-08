@@ -1,0 +1,41 @@
+SANFIS优化器比较实验总结报告
+============================================================
+实验时间: 20250818_093349
+数据集: 脱硫数据
+输入特征: Desulfurization_Liquid_Pressure, Gas_Inlet_Flow, Gas_Inlet_Temperature, H2S_Inlet_Concentration, Rotation_Speed
+输出特征: H2S_Outlet_Concentration
+
+实验结果:
+----------------------------------------
+1. RMSprop
+   MSE: 9.546904
+   R²:  0.941628
+   TSK规则数: 243
+
+2. RAdam
+   MSE: 13.068333
+   R²:  0.920098
+   TSK规则数: 243
+
+3. AdaBelief
+   MSE: 23.442455
+   R²:  0.856668
+   TSK规则数: 243
+
+4. AccSGD
+   MSE: 36.035340
+   R²:  0.779673
+   TSK规则数: 243
+
+5. Adam
+   MSE: 156.031976
+   R²:  0.045991
+   TSK规则数: 243
+
+6. SGD
+   MSE: 673.633813
+   R²:  -3.118726
+   TSK规则数: 243
+
+最佳优化器: RMSprop (R² = 0.941628)
+性能改进: 130.19%

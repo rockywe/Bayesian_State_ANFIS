@@ -1,0 +1,16 @@
+SANFIS优化器比较实验总结报告
+============================================================
+实验时间: 20250827_000400
+数据集: 脱硫数据
+输入特征: Desulfurization_Liquid_Pressure, Gas_Inlet_Flow, Gas_Inlet_Temperature, H2S_Inlet_Concentration, Rotation_Speed
+输出特征: H2S_Outlet_Concentration
+
+实验结果:
+----------------------------------------
+1. Adam
+   MSE: 5.926011
+   R²:  0.963767
+   TSK规则数: 243
+
+最佳优化器: Adam (R² = 0.963767)
+性能改进: 0.00%

@@ -1,0 +1,4028 @@
+{
+  "best_rmse": 0.010413403241653851,
+  "best_params": {
+    "role_GasInletFlow": "both",
+    "role_GasInletTemperature": "explanatory",
+    "role_GasInletPressure": "state",
+    "role_DesulfurizationLiquidFlow": "state",
+    "role_DesulfurizationLiquidTemperature": "state",
+    "role_DesulfurizationLiquidPressure": "explanatory",
+    "role_RotationSpeed": "both",
+    "role_HtwoSInletConcentration": "explanatory",
+    "M": 3
+  },
+  "optimal_state_features": [
+    "Desulfurization_Liquid_Flow",
+    "Desulfurization_Liquid_Temperature",
+    "Gas_Inlet_Flow",
+    "Gas_Inlet_Pressure",
+    "Rotation_Speed"
+  ],
+  "optimal_expl_features": [
+    "Desulfurization_Liquid_Pressure",
+    "Gas_Inlet_Flow",
+    "Gas_Inlet_Temperature",
+    "H2S_Inlet_Concentration",
+    "Rotation_Speed"
+  ],
+  "optimal_M": 3,
+  "total_rules": 243,
+  "best_detailed_metrics": {
+    "rmse": 0.05990343168377876,
+    "rmse_std": 0.020300671458244324,
+    "r2": 0.9261634943282608,
+    "r2_std": 0.050926755615516406,
+    "mse": 0.004000538494437933,
+    "mse_std": 0.0026655516121536493,
+    "mae": 0.029888352379202843,
+    "mae_std": 0.003875577123835683,
+    "mape": 103371.6588889559,
+    "mape_std": 146172.24463298873
+  },
+  "optimization_history": [
+    {
+      "evaluation_id": 1,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 32,
+      "num_state_vars": 5,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 2,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 64,
+      "num_state_vars": 6,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 0.3584548532962799,
+        "rmse_std": 0.06237364932894707,
+        "r2": -1.4174948387845994,
+        "r2_std": 0.9420804688039254,
+        "mse": 0.13238036632537842,
+        "mse_std": 0.046936146914958954,
+        "mae": 0.23851464688777924,
+        "mae_std": 0.08672834187746048,
+        "mape": 288622.5641578436,
+        "mape_std": 408106.60580256453
+      },
+      "fold_metrics": {
+        "rmse": [
+          0.33179786801338196,
+          0.2989632785320282,
+          0.44460341334342957
+        ],
+        "r2": [
+          -1.0911548593174252,
+          -0.46200488112409177,
+          -2.6993247759122814
+        ],
+        "mse": [
+          0.11008982360363007,
+          0.08937904983758926,
+          0.19767220318317413
+        ],
+        "mae": [
+          0.20080623030662537,
+          0.15629330277442932,
+          0.3584443926811218
+        ],
+        "mape": [
+          53.52835655212402,
+          41.703179478645325,
+          865772.4609375
+        ]
+      },
+      "final_score": 0.9024082431106754
+    },
+    {
+      "evaluation_id": 3,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 0.13955967128276825,
+        "rmse_std": 0.0922481045126915,
+        "r2": 0.5329934324540427,
+        "r2_std": 0.5116289289027623,
+        "mse": 0.027986610308289528,
+        "mse_std": 0.03167371824383736,
+        "mae": 0.0733872801065445,
+        "mae_std": 0.04594797268509865,
+        "mape": 245173.04911911488,
+        "mape_std": 346694.9366558942
+      },
+      "fold_metrics": {
+        "rmse": [
+          0.06715977191925049,
+          0.2697450518608093,
+          0.08177419006824493
+        ],
+        "r2": [
+          0.9143243497499772,
+          -0.1902002319924181,
+          0.874856179604569
+        ],
+        "mse": [
+          0.004510434810072184,
+          0.0727623850107193,
+          0.006687018554657698
+        ],
+        "mae": [
+          0.03573909029364586,
+          0.13807840645313263,
+          0.0463443361222744
+        ],
+        "mape": [
+          15.271076560020447,
+          30.145812034606934,
+          735473.73046875
+        ]
+      },
+      "final_score": 0.07913125018188454
+    },
+    {
+      "evaluation_id": 4,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 7,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 5,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 64,
+      "num_state_vars": 6,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 6,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 4,
+      "num_rules": 1024,
+      "num_state_vars": 5,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 7,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 7,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 8,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 729,
+      "num_state_vars": 6,
+      "num_expl_vars": 4,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 9,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 27,
+      "num_state_vars": 3,
+      "num_expl_vars": 7,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 10,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 32,
+      "num_state_vars": 5,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 11,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 32,
+      "num_state_vars": 5,
+      "num_expl_vars": 7,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 12,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 32,
+      "num_state_vars": 5,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 13,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 32,
+      "num_state_vars": 5,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 0.49371466040611267,
+        "rmse_std": 0.019766397774219513,
+        "r2": -3.378446724796257,
+        "r2_std": 0.13662299081201765,
+        "mse": 0.24414484202861786,
+        "mse_std": 0.019692083820700645,
+        "mae": 0.41895028948783875,
+        "mae_std": 0.0372328907251358,
+        "mape": 415925.5533834298,
+        "mape_std": 588066.1371803586
+      },
+      "fold_metrics": {
+        "rmse": [
+          0.48746347427368164,
+          0.5204359292984009,
+          0.47324448823928833
+        ],
+        "r2": [
+          -3.5136009011962894,
+          -3.430447117247293,
+          -3.191292155945189
+        ],
+        "mse": [
+          0.23762063682079315,
+          0.27085354924201965,
+          0.22396034002304077
+        ],
+        "mae": [
+          0.4300873577594757,
+          0.4579508602619171,
+          0.368812620639801
+        ],
+        "mape": [
+          100.0,
+          99.99999403953552,
+          1247576.66015625
+        ]
+      },
+      "final_score": 2.2110748038796513
+    },
+    {
+      "evaluation_id": 14,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 64,
+      "num_state_vars": 6,
+      "num_expl_vars": 4,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 15,
+      "state_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 729,
+      "num_state_vars": 6,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 0.0794653370976448,
+        "rmse_std": 0.039843786507844925,
+        "r2": 0.8548630136345668,
+        "r2_std": 0.13828527084039166,
+        "mse": 0.007902268320322037,
+        "mse_std": 0.0073043364100158215,
+        "mae": 0.03287285193800926,
+        "mae_std": 0.006957413628697395,
+        "mape": 1290903.6544154088,
+        "mape_std": 1825578.3584751924
+      },
+      "fold_metrics": {
+        "rmse": [
+          0.04262833669781685,
+          0.06095732003450394,
+          0.13481035828590393
+        ],
+        "r2": [
+          0.9654827806835142,
+          0.9392194272280027,
+          0.6598868329921836
+        ],
+        "mse": [
+          0.0018171749543398619,
+          0.0037157947663217783,
+          0.018173834308981895
+        ],
+        "mae": [
+          0.026145700365304947,
+          0.03001810982823372,
+          0.04245474562048912
+        ],
+        "mape": [
+          15.834394097328186,
+          33.800727128982544,
+          3872661.328125
+        ]
+      },
+      "final_score": 0.01947989325662991
+    },
+    {
+      "evaluation_id": 16,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 4,
+      "num_rules": 64,
+      "num_state_vars": 3,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 17,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 64,
+      "num_state_vars": 6,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 0.4814053773880005,
+        "rmse_std": 0.03075241483747959,
+        "r2": -3.1633948838468164,
+        "r2_std": 0.32193948751976176,
+        "mse": 0.23269684612751007,
+        "mse_std": 0.029749007895588875,
+        "mae": 0.40778398513793945,
+        "mae_std": 0.04676036536693573,
+        "mape": 46693.79245241483,
+        "mape_std": 65894.41537607895
+      },
+      "fold_metrics": {
+        "rmse": [
+          0.4785042107105255,
+          0.5204359292984009,
+          0.4452759921550751
+        ],
+        "r2": [
+          -3.3492116532636693,
+          -3.430447117247293,
+          -2.710525881029487
+        ],
+        "mse": [
+          0.22896628081798553,
+          0.27085354924201965,
+          0.19827070832252502
+        ],
+        "mae": [
+          0.4200134873390198,
+          0.4579508602619171,
+          0.3453875184059143
+        ],
+        "mape": [
+          98.80900382995605,
+          99.99999403953552,
+          139882.568359375
+        ]
+      },
+      "final_score": 2.052421223012347
+    },
+    {
+      "evaluation_id": 18,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 729,
+      "num_state_vars": 6,
+      "num_expl_vars": 7,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 19,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 4,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 20,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 0.12143712490797043,
+        "rmse_std": 0.03187241032719612,
+        "r2": 0.724489102957389,
+        "r2_std": 0.11891295312480732,
+        "mse": 0.015762826427817345,
+        "mse_std": 0.007728276774287224,
+        "mae": 0.05663125589489937,
+        "mae_std": 0.0168287456035614,
+        "mape": 211822.43399719396,
+        "mape_std": 299524.2712813798
+      },
+      "fold_metrics": {
+        "rmse": [
+          0.0819287896156311,
+          0.1599821001291275,
+          0.12240048497915268
+        ],
+        "r2": [
+          0.8724994487098325,
+          0.5813453822661059,
+          0.7196224778962286
+        ],
+        "mse": [
+          0.006712326314300299,
+          0.025594273582100868,
+          0.01498187892138958
+        ],
+        "mae": [
+          0.04490577057003975,
+          0.08042985200881958,
+          0.044558148831129074
+        ],
+        "mape": [
+          27.060216665267944,
+          26.521071791648865,
+          635413.720703125
+        ]
+      },
+      "final_score": 0.045600963708467585
+    },
+    {
+      "evaluation_id": 21,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 729,
+      "num_state_vars": 6,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 22,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 729,
+      "num_state_vars": 6,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 23,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 128,
+      "num_state_vars": 7,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 24,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 64,
+      "num_state_vars": 6,
+      "num_expl_vars": 4,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 25,
+      "state_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 0.1178457960486412,
+        "rmse_std": 0.06776495277881622,
+        "r2": 0.6615716179187169,
+        "r2_std": 0.34120653980183024,
+        "mse": 0.018479717895388603,
+        "mse_std": 0.018035339191555977,
+        "mae": 0.053882401436567307,
+        "mae_std": 0.018509412184357643,
+        "mape": 491489.93895749253,
+        "mape_std": 695024.5102582773
+      },
+      "fold_metrics": {
+        "rmse": [
+          0.046291325241327286,
+          0.09841340035200119,
+          0.20883263647556305
+        ],
+        "r2": [
+          0.9592958851919768,
+          0.8415757940688411,
+          0.18384317449533283
+        ],
+        "mse": [
+          0.0021428868640214205,
+          0.009685197845101357,
+          0.0436110682785511
+        ],
+        "mae": [
+          0.02943788841366768,
+          0.057996202260255814,
+          0.07421310245990753
+        ],
+        "mape": [
+          16.106638312339783,
+          50.68289041519165,
+          1474403.02734375
+        ]
+      },
+      "final_score": 0.05166694169668664
+    },
+    {
+      "evaluation_id": 26,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 729,
+      "num_state_vars": 6,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 27,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 128,
+      "num_state_vars": 7,
+      "num_expl_vars": 4,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 28,
+      "state_features": [
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 9,
+      "num_state_vars": 2,
+      "num_expl_vars": 8,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 29,
+      "state_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 4,
+      "num_rules": 1024,
+      "num_state_vars": 5,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 0.08895491808652878,
+        "rmse_std": 0.021990634500980377,
+        "r2": 0.846153415419146,
+        "r2_std": 0.08217474397818517,
+        "mse": 0.008396564982831478,
+        "mse_std": 0.004229504149407148,
+        "mae": 0.034555792808532715,
+        "mae_std": 0.006604528985917568,
+        "mape": 295800.5684480071,
+        "mape_std": 418297.6604968487
+      },
+      "fold_metrics": {
+        "rmse": [
+          0.07711569964885712,
+          0.06996956467628479,
+          0.11977947503328323
+        ],
+        "r2": [
+          0.8870400218969912,
+          0.9199186408804679,
+          0.731501583479979
+        ],
+        "mse": [
+          0.0059468308463692665,
+          0.0048957401886582375,
+          0.014347122982144356
+        ],
+        "mae": [
+          0.027474265545606613,
+          0.03282221779227257,
+          0.04337089881300926
+        ],
+        "mape": [
+          11.989061534404755,
+          26.92331373691559,
+          887362.79296875
+        ]
+      },
+      "final_score": 0.022580902137934972
+    },
+    {
+      "evaluation_id": 30,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 729,
+      "num_state_vars": 6,
+      "num_expl_vars": 4,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 31,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 2187,
+      "num_state_vars": 7,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 32,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 81,
+      "num_state_vars": 4,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 33,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 34,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 2187,
+      "num_state_vars": 7,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 35,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 2187,
+      "num_state_vars": 7,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 36,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 4,
+      "num_rules": 256,
+      "num_state_vars": 4,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 37,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 81,
+      "num_state_vars": 4,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 38,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 2187,
+      "num_state_vars": 7,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 39,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 8,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 40,
+      "state_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 81,
+      "num_state_vars": 4,
+      "num_expl_vars": 7,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 41,
+      "state_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 4,
+      "num_rules": 256,
+      "num_state_vars": 4,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 42,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 2187,
+      "num_state_vars": 7,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 43,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 2187,
+      "num_state_vars": 7,
+      "num_expl_vars": 4,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 44,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 2187,
+      "num_state_vars": 7,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 45,
+      "state_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 46,
+      "state_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 0.18983101844787598,
+        "rmse_std": 0.06764844059944153,
+        "r2": 0.24731743837042394,
+        "r2_std": 0.5628518271250347,
+        "mse": 0.0406121201813221,
+        "mse_std": 0.028888845816254616,
+        "mae": 0.12475337833166122,
+        "mae_std": 0.06026998907327652,
+        "mape": 561.2764398256937,
+        "mape_std": 718.6093470673936
+      },
+      "fold_metrics": {
+        "rmse": [
+          0.28538691997528076,
+          0.1380196064710617,
+          0.14608651399612427
+        ],
+        "r2": [
+          -0.547059810430877,
+          0.6884020635814196,
+          0.6006100619607292
+        ],
+        "mse": [
+          0.08144568651914597,
+          0.01904940977692604,
+          0.021341267973184586
+        ],
+        "mae": [
+          0.20993101596832275,
+          0.08486344665288925,
+          0.07946565747261047
+        ],
+        "mape": [
+          64.99456763267517,
+          41.38266444206238,
+          1577.4520874023438
+        ]
+      },
+      "final_score": 0.16186559908688622
+    },
+    {
+      "evaluation_id": 47,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 729,
+      "num_state_vars": 6,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 48,
+      "state_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 49,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 32,
+      "num_state_vars": 5,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 50,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 4,
+      "num_rules": 256,
+      "num_state_vars": 4,
+      "num_expl_vars": 8,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 51,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 2187,
+      "num_state_vars": 7,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 52,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 0.1051282286643982,
+        "rmse_std": 0.07286802679300308,
+        "r2": 0.6984664824248736,
+        "r2_std": 0.3434388884415448,
+        "mse": 0.016361692920327187,
+        "mse_std": 0.018208947032690048,
+        "mae": 0.043038878589868546,
+        "mae_std": 0.018809909000992775,
+        "mape": 212948.71698146066,
+        "mape_std": 301135.89899917954
+      },
+      "fold_metrics": {
+        "rmse": [
+          0.032678913325071335,
+          0.07788679003715515,
+          0.204818993806839
+        ],
+        "r2": [
+          0.9797150346834453,
+          0.9007705428767003,
+          0.21491386971447513
+        ],
+        "mse": [
+          0.001067911391146481,
+          0.006066351663321257,
+          0.04195081815123558
+        ],
+        "mae": [
+          0.022063639014959335,
+          0.039357930421829224,
+          0.06769507378339767
+        ],
+        "mape": [
+          10.90448573231697,
+          16.057005524635315,
+          638819.189453125
+        ]
+      },
+      "final_score": 0.04221250745205805
+    },
+    {
+      "evaluation_id": 53,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 729,
+      "num_state_vars": 6,
+      "num_expl_vars": 7,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 54,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 55,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 32,
+      "num_state_vars": 5,
+      "num_expl_vars": 4,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 56,
+      "state_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 729,
+      "num_state_vars": 6,
+      "num_expl_vars": 7,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 57,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 64,
+      "num_state_vars": 6,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 58,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 2187,
+      "num_state_vars": 7,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 59,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 32,
+      "num_state_vars": 5,
+      "num_expl_vars": 7,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 60,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 243,
+      "num_state_vars": 5,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 0.05990343168377876,
+        "rmse_std": 0.020300671458244324,
+        "r2": 0.9261634943282608,
+        "r2_std": 0.050926755615516406,
+        "mse": 0.004000538494437933,
+        "mse_std": 0.0026655516121536493,
+        "mae": 0.029888352379202843,
+        "mae_std": 0.003875577123835683,
+        "mape": 103371.6588889559,
+        "mape_std": 146172.24463298873
+      },
+      "fold_metrics": {
+        "rmse": [
+          0.05147641897201538,
+          0.04034900292754173,
+          0.08788488060235977
+        ],
+        "r2": [
+          0.9496666663337582,
+          0.973369540024418,
+          0.8554542766266067
+        ],
+        "mse": [
+          0.0026498218066990376,
+          0.0016280419658869505,
+          0.007723752409219742
+        ],
+        "mae": [
+          0.03194310516119003,
+          0.0244605615735054,
+          0.033261388540267944
+        ],
+        "mape": [
+          13.379697501659393,
+          11.167281866073608,
+          310090.4296875
+        ]
+      },
+      "final_score": 0.010413403241653851
+    },
+    {
+      "evaluation_id": 61,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 81,
+      "num_state_vars": 4,
+      "num_expl_vars": 7,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 62,
+      "state_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 32,
+      "num_state_vars": 5,
+      "num_expl_vars": 6,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 63,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 2,
+      "num_rules": 64,
+      "num_state_vars": 6,
+      "num_expl_vars": 5,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    },
+    {
+      "evaluation_id": 64,
+      "state_features": [
+        "Desulfurization_Liquid_Flow",
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "Gas_Inlet_Flow",
+        "Gas_Inlet_Pressure",
+        "Gas_Inlet_Temperature",
+        "Rotation_Speed"
+      ],
+      "explanatory_features": [
+        "Desulfurization_Liquid_Pressure",
+        "Desulfurization_Liquid_Temperature",
+        "H2S_Inlet_Concentration",
+        "Rotation_Speed"
+      ],
+      "M": 3,
+      "num_rules": 2187,
+      "num_state_vars": 7,
+      "num_expl_vars": 4,
+      "metrics": {
+        "rmse": 10000000000.0,
+        "rmse_std": 0.0,
+        "r2": -10000000000.0,
+        "r2_std": 0.0,
+        "mse": 10000000000.0,
+        "mse_std": 0.0,
+        "mae": 10000000000.0,
+        "mae_std": 0.0,
+        "mape": 10000000000.0,
+        "mape_std": 0.0
+      },
+      "fold_metrics": {
+        "rmse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "r2": [
+          -10000000000.0,
+          -10000000000.0,
+          -10000000000.0
+        ],
+        "mse": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mae": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ],
+        "mape": [
+          10000000000.0,
+          10000000000.0,
+          10000000000.0
+        ]
+      },
+      "final_score": 1.00000000011e+20
+    }
+  ],
+  "timestamp": "20250620_104056",
+  "feature_names": [
+    "Gas_Inlet_Flow",
+    "Gas_Inlet_Temperature",
+    "Gas_Inlet_Pressure",
+    "Desulfurization_Liquid_Flow",
+    "Desulfurization_Liquid_Temperature",
+    "Desulfurization_Liquid_Pressure",
+    "Rotation_Speed",
+    "H2S_Inlet_Concentration"
+  ]
+}

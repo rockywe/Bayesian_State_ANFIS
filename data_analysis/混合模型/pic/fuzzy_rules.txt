@@ -1,0 +1,424 @@
+ANFIS模糊规则
+
+模型使用 8 个输入变量，每个变量有 2 个隶属度函数
+共有 256 条规则 (展示部分规则)
+
+== 部分规则示例 ==
+
+规则 181:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 20.9533
+
+规则 16:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 26.1977
+
+规则 202:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 15.4359
+
+规则 42:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 31.2595
+
+规则 155:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 25.0216
+
+规则 228:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 35.0029
+
+规则 77:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 19.7159
+
+规则 192:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 24.8032
+
+规则 82:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 35.6462
+
+规则 220:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 15.5894
+
+规则 218:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 17.3538
+
+规则 144:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 26.4250
+
+规则 41:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 23.0117
+
+规则 217:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 23.2055
+
+规则 196:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 35.0746
+
+规则 199:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 17.1519
+
+规则 152:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 32.3778
+
+规则 117:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 16.8352
+
+规则 79:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 17.8224
+
+规则 67:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 18.7993
+
+规则 248:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 30.1079
+
+规则 112:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 15.3438
+
+规则 22:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 37.3207
+
+规则 84:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 29.4614
+
+规则 169:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 22.7867
+
+规则 36:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 48.1640
+
+规则 221:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 20.6567
+
+规则 209:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 19.9750
+
+规则 53:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 21.2071
+
+规则 143:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 21.5012
+
+规则 9:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 26.1690
+
+规则 47:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 18.8221
+
+规则 222:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 19.5164
+
+规则 255:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 17.0989
+
+规则 94:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 19.1010
+
+规则 133:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 25.0103
+
+规则 123:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 19.3892
+
+规则 3:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 23.3733
+
+规则 101:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 22.0312
+
+规则 121:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 20.9894
+
+规则 189:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 20.4340
+
+规则 54:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 42.5615
+
+规则 233:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 20.4729
+
+规则 227:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 20.9017
+
+规则 78:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 17.4871
+
+规则 194:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 41.7394
+
+规则 177:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 21.9452
+
+规则 167:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 23.6133
+
+规则 151:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 20.3133
+
+规则 136:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 36.2556
+
+规则 124:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 12.3912
+
+规则 19:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 21.8442
+
+规则 201:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 21.4017
+
+规则 6:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 40.8990
+
+规则 76:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 13.7026
+
+规则 191:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 18.5542
+
+规则 147:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 21.6365
+
+规则 141:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 23.4645
+
+规则 45:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 20.6509
+
+规则 236:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 15.2189
+
+规则 56:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 47.0839
+
+规则 187:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 21.0900
+
+规则 243:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 15.2821
+
+规则 43:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 21.1828
+
+规则 178:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 43.9366
+
+规则 140:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 26.7633
+
+规则 74:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 15.0853
+
+规则 32:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 27.2969
+
+规则 12:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 26.3002
+
+规则 30:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 29.6719
+
+规则 188:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 29.7106
+
+规则 108:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 15.9040
+
+规则 2:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 39.2397
+
+规则 180:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 49.1889
+
+规则 223:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 18.8717
+
+规则 148:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 30.4722
+
+规则 111:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 16.9007
+
+规则 250:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 6.1877
+
+规则 51:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 20.6499
+
+规则 237:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 18.1071
+
+规则 40:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 47.6182
+
+规则 87:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 15.8049
+
+规则 93:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 21.0130
+
+规则 205:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 18.8530
+
+规则 253:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 18.7817
+
+规则 130:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 39.9866
+
+规则 166:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 44.8824
+
+规则 99:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 21.0521
+
+规则 64:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 26.1601
+
+规则 95:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 19.1194
+
+规则 65:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 22.2364
+
+规则 98:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 30.1948
+
+规则 138:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 29.4278
+
+规则 97:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 22.6149
+
+规则 70:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 44.3849
+
+规则 215:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 15.2830
+
+规则 73:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数1 (典型值=35.1426) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 22.0458
+
+规则 149:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数2 (典型值=20.8734) 且 Desulfurization_Liquid_Flow 属于 隶属度函数1 (典型值=8.0477) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 23.4663
+
+规则 92:
+如果 Gas_Inlet_Flow 属于 隶属度函数2 (典型值=1020.4727) 且 Gas_Inlet_Temperature 属于 隶属度函数2 (典型值=49.0730) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数1 (典型值=40.5700) 且 Rotation_Speed 属于 隶属度函数2 (典型值=78.3729) 且 H2S_Inlet_Concentration 属于 隶属度函数1 (典型值=898.0000)，
+那么 输出 = 15.3165
+
+规则 185:
+如果 Gas_Inlet_Flow 属于 隶属度函数1 (典型值=762.6217) 且 Gas_Inlet_Temperature 属于 隶属度函数1 (典型值=42.9840) 且 Gas_Inlet_Pressure 属于 隶属度函数1 (典型值=18.4045) 且 Desulfurization_Liquid_Flow 属于 隶属度函数2 (典型值=21.3646) 且 Desulfurization_Liquid_Temperature 属于 隶属度函数2 (典型值=40.7991) 且 Desulfurization_Liquid_Pressure 属于 隶属度函数2 (典型值=59.4897) 且 Rotation_Speed 属于 隶属度函数1 (典型值=48.1841) 且 H2S_Inlet_Concentration 属于 隶属度函数2 (典型值=902.0000)，
+那么 输出 = 22.9697
+
+
+== 特征影响分析 ==
+以下是每个输入特征对输出的影响大小:
+
+Rotation_Speed: -10.3703
+Desulfurization_Liquid_Flow: -4.0044
+Gas_Inlet_Pressure: -2.1845
+Desulfurization_Liquid_Temperature: -1.9013
+Desulfurization_Liquid_Pressure: -1.2279
+Gas_Inlet_Temperature: +1.1780
+Gas_Inlet_Flow: +0.1458
+H2S_Inlet_Concentration: +0.0000
+
+== 规则解释 ==
+每个规则表示：当输入变量属于特定的隶属度函数时，模型预测的输出值。
+典型值代表该隶属度函数的特征中心点。
+特征影响表示：当该特征从0变化到2时，输出的平均变化量。

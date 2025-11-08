@@ -1,0 +1,405 @@
+SANFIS完整TSK模糊规则 - 优化器: SGD
+生成时间: 20250818_102758
+模型性能: MSE=181.612192, R²=-0.110412
+================================================================================
+
+规则 63 (激活强度: 0.189705):
+前件: IF (Desulfurization_Liquid_Pressure=低 AND Gas_Inlet_Flow=高 AND Gas_Inlet_Temperature=低 AND H2S_Inlet_Concentration=高 AND Rotation_Speed=高)
+后件: THEN y = 0.1065×Desulfurization_Liquid_Pressure -0.3928×Gas_Inlet_Flow +0.2221×Gas_Inlet_Temperature -0.0386×H2S_Inlet_Concentration -0.2757×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.085487, σ=0.317592, 标签=低
+    Gas_Inlet_Flow: μ=0.916377, σ=0.228562, 标签=高
+    Gas_Inlet_Temperature: μ=0.119400, σ=0.187358, 标签=低
+    H2S_Inlet_Concentration: μ=0.900187, σ=0.200187, 标签=高
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: 0.106487
+    weight_Gas_Inlet_Flow: -0.392793
+    weight_Gas_Inlet_Temperature: 0.222114
+    weight_H2S_Inlet_Concentration: -0.038615
+    weight_Rotation_Speed: -0.275732
+
+------------------------------------------------------------
+
+规则 144 (激活强度: 0.182010):
+前件: IF (Desulfurization_Liquid_Pressure=中 AND Gas_Inlet_Flow=高 AND Gas_Inlet_Temperature=低 AND H2S_Inlet_Concentration=高 AND Rotation_Speed=高)
+后件: THEN y = 0.1900×Desulfurization_Liquid_Pressure +0.2224×Gas_Inlet_Flow +0.4484×Gas_Inlet_Temperature +0.4216×H2S_Inlet_Concentration -0.0996×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.376337, σ=0.095689, 标签=中
+    Gas_Inlet_Flow: μ=0.916377, σ=0.228562, 标签=高
+    Gas_Inlet_Temperature: μ=0.119400, σ=0.187358, 标签=低
+    H2S_Inlet_Concentration: μ=0.900187, σ=0.200187, 标签=高
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: 0.190025
+    weight_Gas_Inlet_Flow: 0.222389
+    weight_Gas_Inlet_Temperature: 0.448436
+    weight_H2S_Inlet_Concentration: 0.421619
+    weight_Rotation_Speed: -0.099614
+
+------------------------------------------------------------
+
+规则 36 (激活强度: 0.122781):
+前件: IF (Desulfurization_Liquid_Pressure=低 AND Gas_Inlet_Flow=中 AND Gas_Inlet_Temperature=低 AND H2S_Inlet_Concentration=高 AND Rotation_Speed=高)
+后件: THEN y = 0.1815×Desulfurization_Liquid_Pressure -0.1715×Gas_Inlet_Flow -0.4361×Gas_Inlet_Temperature -0.0087×H2S_Inlet_Concentration +0.1974×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.085487, σ=0.317592, 标签=低
+    Gas_Inlet_Flow: μ=0.565729, σ=0.194472, 标签=中
+    Gas_Inlet_Temperature: μ=0.119400, σ=0.187358, 标签=低
+    H2S_Inlet_Concentration: μ=0.900187, σ=0.200187, 标签=高
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: 0.181519
+    weight_Gas_Inlet_Flow: -0.171528
+    weight_Gas_Inlet_Temperature: -0.436132
+    weight_H2S_Inlet_Concentration: -0.008702
+    weight_Rotation_Speed: 0.197422
+
+------------------------------------------------------------
+
+规则 117 (激活强度: 0.117833):
+前件: IF (Desulfurization_Liquid_Pressure=中 AND Gas_Inlet_Flow=中 AND Gas_Inlet_Temperature=低 AND H2S_Inlet_Concentration=高 AND Rotation_Speed=高)
+后件: THEN y = -0.2653×Desulfurization_Liquid_Pressure +0.4420×Gas_Inlet_Flow -0.2246×Gas_Inlet_Temperature +0.3686×H2S_Inlet_Concentration +0.1473×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.376337, σ=0.095689, 标签=中
+    Gas_Inlet_Flow: μ=0.565729, σ=0.194472, 标签=中
+    Gas_Inlet_Temperature: μ=0.119400, σ=0.187358, 标签=低
+    H2S_Inlet_Concentration: μ=0.900187, σ=0.200187, 标签=高
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: -0.265306
+    weight_Gas_Inlet_Flow: 0.441997
+    weight_Gas_Inlet_Temperature: -0.224616
+    weight_H2S_Inlet_Concentration: 0.368578
+    weight_Rotation_Speed: 0.147287
+
+------------------------------------------------------------
+
+规则 120 (激活强度: 0.089107):
+前件: IF (Desulfurization_Liquid_Pressure=中 AND Gas_Inlet_Flow=中 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=高)
+后件: THEN y = 0.3659×Desulfurization_Liquid_Pressure -0.1561×Gas_Inlet_Flow -0.1602×Gas_Inlet_Temperature +0.1655×H2S_Inlet_Concentration +0.2373×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.376337, σ=0.095689, 标签=中
+    Gas_Inlet_Flow: μ=0.565729, σ=0.194472, 标签=中
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: 0.365879
+    weight_Gas_Inlet_Flow: -0.156100
+    weight_Gas_Inlet_Temperature: -0.160228
+    weight_H2S_Inlet_Concentration: 0.165480
+    weight_Rotation_Speed: 0.237267
+
+------------------------------------------------------------
+
+规则 111 (激活强度: 0.088647):
+前件: IF (Desulfurization_Liquid_Pressure=中 AND Gas_Inlet_Flow=中 AND Gas_Inlet_Temperature=低 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=高)
+后件: THEN y = -0.2918×Desulfurization_Liquid_Pressure -0.2563×Gas_Inlet_Flow +0.1658×Gas_Inlet_Temperature +0.2854×H2S_Inlet_Concentration -0.1603×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.376337, σ=0.095689, 标签=中
+    Gas_Inlet_Flow: μ=0.565729, σ=0.194472, 标签=中
+    Gas_Inlet_Temperature: μ=0.119400, σ=0.187358, 标签=低
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: -0.291789
+    weight_Gas_Inlet_Flow: -0.256308
+    weight_Gas_Inlet_Temperature: 0.165847
+    weight_H2S_Inlet_Concentration: 0.285384
+    weight_Rotation_Speed: -0.160289
+
+------------------------------------------------------------
+
+规则 45 (激活强度: 0.083250):
+前件: IF (Desulfurization_Liquid_Pressure=低 AND Gas_Inlet_Flow=中 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=高 AND Rotation_Speed=高)
+后件: THEN y = -0.2880×Desulfurization_Liquid_Pressure +0.4273×Gas_Inlet_Flow +0.0398×Gas_Inlet_Temperature +0.1390×H2S_Inlet_Concentration +0.0139×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.085487, σ=0.317592, 标签=低
+    Gas_Inlet_Flow: μ=0.565729, σ=0.194472, 标签=中
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.900187, σ=0.200187, 标签=高
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: -0.288026
+    weight_Gas_Inlet_Flow: 0.427284
+    weight_Gas_Inlet_Temperature: 0.039812
+    weight_H2S_Inlet_Concentration: 0.138990
+    weight_Rotation_Speed: 0.013930
+
+------------------------------------------------------------
+
+规则 39 (激活强度: 0.079148):
+前件: IF (Desulfurization_Liquid_Pressure=低 AND Gas_Inlet_Flow=中 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=高)
+后件: THEN y = 0.4940×Desulfurization_Liquid_Pressure +0.1370×Gas_Inlet_Flow +0.0257×Gas_Inlet_Temperature -0.1734×H2S_Inlet_Concentration +0.2591×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.085487, σ=0.317592, 标签=低
+    Gas_Inlet_Flow: μ=0.565729, σ=0.194472, 标签=中
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: 0.493960
+    weight_Gas_Inlet_Flow: 0.137021
+    weight_Gas_Inlet_Temperature: 0.025738
+    weight_H2S_Inlet_Concentration: -0.173429
+    weight_Rotation_Speed: 0.259096
+
+------------------------------------------------------------
+
+规则 126 (激活强度: 0.074138):
+前件: IF (Desulfurization_Liquid_Pressure=中 AND Gas_Inlet_Flow=中 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=高 AND Rotation_Speed=高)
+后件: THEN y = -0.2491×Desulfurization_Liquid_Pressure -0.4425×Gas_Inlet_Flow +0.3522×Gas_Inlet_Temperature -0.3562×H2S_Inlet_Concentration -0.4124×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.376337, σ=0.095689, 标签=中
+    Gas_Inlet_Flow: μ=0.565729, σ=0.194472, 标签=中
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.900187, σ=0.200187, 标签=高
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: -0.249105
+    weight_Gas_Inlet_Flow: -0.442496
+    weight_Gas_Inlet_Temperature: 0.352234
+    weight_H2S_Inlet_Concentration: -0.356153
+    weight_Rotation_Speed: -0.412372
+
+------------------------------------------------------------
+
+规则 30 (激活强度: 0.070655):
+前件: IF (Desulfurization_Liquid_Pressure=低 AND Gas_Inlet_Flow=中 AND Gas_Inlet_Temperature=低 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=高)
+后件: THEN y = -0.3300×Desulfurization_Liquid_Pressure -0.2673×Gas_Inlet_Flow +0.0657×Gas_Inlet_Temperature -0.1373×H2S_Inlet_Concentration -0.4280×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.085487, σ=0.317592, 标签=低
+    Gas_Inlet_Flow: μ=0.565729, σ=0.194472, 标签=中
+    Gas_Inlet_Temperature: μ=0.119400, σ=0.187358, 标签=低
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: -0.330009
+    weight_Gas_Inlet_Flow: -0.267261
+    weight_Gas_Inlet_Temperature: 0.065736
+    weight_H2S_Inlet_Concentration: -0.137252
+    weight_Rotation_Speed: -0.427956
+
+------------------------------------------------------------
+
+规则 138 (激活强度: 0.070161):
+前件: IF (Desulfurization_Liquid_Pressure=中 AND Gas_Inlet_Flow=高 AND Gas_Inlet_Temperature=低 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=高)
+后件: THEN y = -0.1573×Desulfurization_Liquid_Pressure +0.0080×Gas_Inlet_Flow -0.2880×Gas_Inlet_Temperature -0.1460×H2S_Inlet_Concentration -0.2027×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.376337, σ=0.095689, 标签=中
+    Gas_Inlet_Flow: μ=0.916377, σ=0.228562, 标签=高
+    Gas_Inlet_Temperature: μ=0.119400, σ=0.187358, 标签=低
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: -0.157291
+    weight_Gas_Inlet_Flow: 0.008029
+    weight_Gas_Inlet_Temperature: -0.288028
+    weight_H2S_Inlet_Concentration: -0.146038
+    weight_Rotation_Speed: -0.202687
+
+------------------------------------------------------------
+
+规则 147 (激活强度: 0.063504):
+前件: IF (Desulfurization_Liquid_Pressure=中 AND Gas_Inlet_Flow=高 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=高)
+后件: THEN y = -0.3372×Desulfurization_Liquid_Pressure -0.4846×Gas_Inlet_Flow -0.2262×Gas_Inlet_Temperature -0.2214×H2S_Inlet_Concentration +0.3207×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.376337, σ=0.095689, 标签=中
+    Gas_Inlet_Flow: μ=0.916377, σ=0.228562, 标签=高
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: -0.337189
+    weight_Gas_Inlet_Flow: -0.484562
+    weight_Gas_Inlet_Temperature: -0.226190
+    weight_H2S_Inlet_Concentration: -0.221421
+    weight_Rotation_Speed: 0.320712
+
+------------------------------------------------------------
+
+规则 66 (激活强度: 0.056803):
+前件: IF (Desulfurization_Liquid_Pressure=低 AND Gas_Inlet_Flow=高 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=高)
+后件: THEN y = 0.1764×Desulfurization_Liquid_Pressure -0.1511×Gas_Inlet_Flow -0.3028×Gas_Inlet_Temperature +0.3375×H2S_Inlet_Concentration +0.1415×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.085487, σ=0.317592, 标签=低
+    Gas_Inlet_Flow: μ=0.916377, σ=0.228562, 标签=高
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: 0.176420
+    weight_Gas_Inlet_Flow: -0.151072
+    weight_Gas_Inlet_Temperature: -0.302845
+    weight_H2S_Inlet_Concentration: 0.337518
+    weight_Rotation_Speed: 0.141535
+
+------------------------------------------------------------
+
+规则 72 (激活强度: 0.056575):
+前件: IF (Desulfurization_Liquid_Pressure=低 AND Gas_Inlet_Flow=高 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=高 AND Rotation_Speed=高)
+后件: THEN y = 0.4301×Desulfurization_Liquid_Pressure -0.2650×Gas_Inlet_Flow -0.1129×Gas_Inlet_Temperature -0.2653×H2S_Inlet_Concentration -0.3992×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.085487, σ=0.317592, 标签=低
+    Gas_Inlet_Flow: μ=0.916377, σ=0.228562, 标签=高
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.900187, σ=0.200187, 标签=高
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: 0.430114
+    weight_Gas_Inlet_Flow: -0.265041
+    weight_Gas_Inlet_Temperature: -0.112934
+    weight_H2S_Inlet_Concentration: -0.265336
+    weight_Rotation_Speed: -0.399200
+
+------------------------------------------------------------
+
+规则 57 (激活强度: 0.055645):
+前件: IF (Desulfurization_Liquid_Pressure=低 AND Gas_Inlet_Flow=高 AND Gas_Inlet_Temperature=低 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=高)
+后件: THEN y = -0.1711×Desulfurization_Liquid_Pressure +0.0793×Gas_Inlet_Flow +0.2502×Gas_Inlet_Temperature +0.1776×H2S_Inlet_Concentration -0.3106×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.085487, σ=0.317592, 标签=低
+    Gas_Inlet_Flow: μ=0.916377, σ=0.228562, 标签=高
+    Gas_Inlet_Temperature: μ=0.119400, σ=0.187358, 标签=低
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: -0.171053
+    weight_Gas_Inlet_Flow: 0.079307
+    weight_Gas_Inlet_Temperature: 0.250230
+    weight_H2S_Inlet_Concentration: 0.177607
+    weight_Rotation_Speed: -0.310566
+
+------------------------------------------------------------
+
+规则 153 (激活强度: 0.051583):
+前件: IF (Desulfurization_Liquid_Pressure=中 AND Gas_Inlet_Flow=高 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=高 AND Rotation_Speed=高)
+后件: THEN y = 0.1162×Desulfurization_Liquid_Pressure -0.1709×Gas_Inlet_Flow -0.3388×Gas_Inlet_Temperature +0.3958×H2S_Inlet_Concentration +0.2119×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.376337, σ=0.095689, 标签=中
+    Gas_Inlet_Flow: μ=0.916377, σ=0.228562, 标签=高
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.900187, σ=0.200187, 标签=高
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: 0.116233
+    weight_Gas_Inlet_Flow: -0.170927
+    weight_Gas_Inlet_Temperature: -0.338786
+    weight_H2S_Inlet_Concentration: 0.395849
+    weight_Rotation_Speed: 0.211945
+
+------------------------------------------------------------
+
+规则 119 (激活强度: 0.049894):
+前件: IF (Desulfurization_Liquid_Pressure=中 AND Gas_Inlet_Flow=中 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=中)
+后件: THEN y = -0.2782×Desulfurization_Liquid_Pressure +0.3700×Gas_Inlet_Flow -0.3796×Gas_Inlet_Temperature +0.1110×H2S_Inlet_Concentration +0.3820×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.376337, σ=0.095689, 标签=中
+    Gas_Inlet_Flow: μ=0.565729, σ=0.194472, 标签=中
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.512653, σ=0.152370, 标签=中
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: -0.278196
+    weight_Gas_Inlet_Flow: 0.370042
+    weight_Gas_Inlet_Temperature: -0.379634
+    weight_H2S_Inlet_Concentration: 0.111037
+    weight_Rotation_Speed: 0.381975
+
+------------------------------------------------------------
+
+规则 38 (激活强度: 0.036374):
+前件: IF (Desulfurization_Liquid_Pressure=低 AND Gas_Inlet_Flow=中 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=中)
+后件: THEN y = -0.0655×Desulfurization_Liquid_Pressure -0.0125×Gas_Inlet_Flow -0.2724×Gas_Inlet_Temperature -0.4313×H2S_Inlet_Concentration -0.2644×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.085487, σ=0.317592, 标签=低
+    Gas_Inlet_Flow: μ=0.565729, σ=0.194472, 标签=中
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.512653, σ=0.152370, 标签=中
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: -0.065497
+    weight_Gas_Inlet_Flow: -0.012465
+    weight_Gas_Inlet_Temperature: -0.272423
+    weight_H2S_Inlet_Concentration: -0.431322
+    weight_Rotation_Speed: -0.264369
+
+------------------------------------------------------------
+
+规则 146 (激活强度: 0.033737):
+前件: IF (Desulfurization_Liquid_Pressure=中 AND Gas_Inlet_Flow=高 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=中)
+后件: THEN y = 0.2462×Desulfurization_Liquid_Pressure +0.4647×Gas_Inlet_Flow +0.0916×Gas_Inlet_Temperature +0.1504×H2S_Inlet_Concentration +0.0632×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.376337, σ=0.095689, 标签=中
+    Gas_Inlet_Flow: μ=0.916377, σ=0.228562, 标签=高
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.512653, σ=0.152370, 标签=中
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: 0.246205
+    weight_Gas_Inlet_Flow: 0.464739
+    weight_Gas_Inlet_Temperature: 0.091580
+    weight_H2S_Inlet_Concentration: 0.150443
+    weight_Rotation_Speed: 0.063204
+
+------------------------------------------------------------
+
+规则 201 (激活强度: 0.031395):
+前件: IF (Desulfurization_Liquid_Pressure=高 AND Gas_Inlet_Flow=中 AND Gas_Inlet_Temperature=中 AND H2S_Inlet_Concentration=低 AND Rotation_Speed=高)
+后件: THEN y = 0.4731×Desulfurization_Liquid_Pressure +0.4065×Gas_Inlet_Flow +0.0298×Gas_Inlet_Temperature +0.0739×H2S_Inlet_Concentration -0.1198×Rotation_Speed
+
+详细参数:
+  隶属函数参数:
+    Desulfurization_Liquid_Pressure: μ=0.897526, σ=0.220084, 标签=高
+    Gas_Inlet_Flow: μ=0.565729, σ=0.194472, 标签=中
+    Gas_Inlet_Temperature: μ=0.363263, σ=0.065802, 标签=中
+    H2S_Inlet_Concentration: μ=0.223459, σ=0.253850, 标签=低
+    Rotation_Speed: μ=0.835627, σ=0.297577, 标签=高
+  后件参数:
+    weight_Desulfurization_Liquid_Pressure: 0.473131
+    weight_Gas_Inlet_Flow: 0.406489
+    weight_Gas_Inlet_Temperature: 0.029792
+    weight_H2S_Inlet_Concentration: 0.073898
+    weight_Rotation_Speed: -0.119795
+
+------------------------------------------------------------
+
